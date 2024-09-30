@@ -53,10 +53,15 @@
             position: fixed;
             bottom: 10px;
             right: 10px;
-            background-color: #28a745;
+            background-color: #B22222;
             color: white;
             padding: 10px;
             border-radius: 5px;
+        }
+        #instruction.red {
+            color: red;
+            background-color: white;
+            font-weight: bold;
         }
         .personal-id {
             font-size: 1.2em;
@@ -143,6 +148,7 @@
 
     <!-- Bilgi Formu -->
     <div class="container" id="form-container">
+        <h2>ALMANCA GENEL SEVİYE BELİRLEME SINAVI</h2>
         <h2>Teste Başlamak için Bilgilerinizi Girin</h2>
         <form id="userForm">
             <label for="name">Ad Soyad:</label>
@@ -168,8 +174,8 @@
         <!-- Geri Sayım -->
         <div id="timer">120:00</div>
 
-        <div id="instruction" class="hidden">
-            Başlamak ve sorular arasında geçiş yapmak için sayfanın köşesindeki yeşil OK tuşunu kullanın.
+        <div id="instruction" class="hidden red">
+            Başlamak ve sorular arasında geçiş yapmak için sayfanın köşesindeki kırmızı ZURÜCK & WEITER tuşunu kullanın.
         </div>
 
         <div id="result-section" class="hidden">
@@ -195,7 +201,7 @@
 
     <!-- Sol alt köşede kısa rehber mesaj -->
     <div class="guide-message hidden" id="guide-message">
-        Sorular arasında geçiş için OK tuşunu kullanın.
+        Sorular arasında geçiş için ZURÜCK & WEITER tuşunu kullanın.
     </div>
 
     <footer>
